@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "../src/assets/Themes/Zephyr/variables";
+@import "bootstrap/scss/bootstrap";
+@import "../src/assets/Themes/Zephyr/bootswatch";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+html,
+body {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

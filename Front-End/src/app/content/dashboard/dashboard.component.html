@@ -1,0 +1,72 @@
+<div class="container-fluid">
+  <div class="row">
+    <nav
+      id="sidebarMenu"
+      class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+    >
+      <div class="position-sticky pt-3 sidebar-sticky">
+        <h6
+          class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase"
+        >
+          <span>Admin Panel</span>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-person-bounding-box"></i>
+              Users
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-file-text-fill"></i>
+              Attachments
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-magic"></i>
+              Hide Results
+            </a>
+          </li>
+        </ul>
+
+        <!-- Begin Dashboard -->
+        <h6
+          class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase"
+        >
+          <span>Dashboard</span>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a
+              class="nav-link pointer"
+              (click)="goToLink('../../../assets/Documents/ReqForm.pdf')"
+            >
+              <i class="bi bi-cart-check-fill"></i>
+              Blank Test Order Form
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-person-fill-lock"></i>
+              Change Password
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+      >
+        <h1 class="text-primary"><i class="bi bi-newspaper"></i> Results</h1>
+      </div>
+    <app-results></app-results>
+    </main>
+  </div>
+</div>

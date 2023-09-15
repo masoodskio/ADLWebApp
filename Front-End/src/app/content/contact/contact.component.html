@@ -1,0 +1,36 @@
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+  <header class="d-flex align-items-center pb-3 mb-4 border-bottom">
+    <h1 class="text-primary">
+      <i class="bi bi-telephone-plus-fill"></i> Contact
+    </h1>
+  </header>
+
+  <main>
+    <p class="text-primary">
+      <strong>Reach Us At</strong><br />
+      Tel: (847) 674-8600<br />
+      Fax: (847) 674-8603<br />
+    </p>
+
+    <a
+      href="https://maps.google.com/maps?f=d&source=s_q&hl=en&geocode=%3BCRkU-w1WGUhiFag3gQId38PE-im1hvM7L88PiDHDt65W6Ez56Q&q=7855+Gross+Point+Road,+Skokie,+IL+60077,+United+States&aq=0&oq=7855+Gross+Point+Road+Skokie,+IL+60077+&sll=42.022824,-87.768097&sspn=0.009692,0.021007&ie=UTF8&hq=&hnear=7855+Gross+Point+Rd,+Skokie,+Cook,+Illinois+60077&t=m&ll=42.027045,-87.77029&spn=0.030604,0.072098&z=14&vpsrc=6&iwloc=A&daddr=7855+Gross+Point+Rd,+Skokie,+IL+60077"
+      target="_blank"
+      ><strong>Driving Directions</strong></a
+    >
+    <div
+      class="spinner spinner-border text-primary"
+      role="status"
+      *ngIf="showLoading"
+    >
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <!-- 16:9 aspect ratio -->
+    <div class="ratio ratio-21x9">
+      <iframe
+        (load)="onLoad()"
+        src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=7855+Gross+Point+Road,+Skokie,+IL+60077,+United+States&amp;aq=0&amp;oq=7855+Gross+Point+Road+Skokie,+IL+60077+&amp;sll=42.022824,-87.768097&amp;sspn=0.009692,0.021007&amp;g=7855+Gross+Point+Road+Skokie,+IL+60077&amp;ie=UTF8&amp;hq=&amp;hnear=7855+Gross+Point+Rd,+Skokie,+Cook,+Illinois+60077&amp;t=m&amp;ll=42.026089,-87.770462&amp;spn=0.030604,0.054932&amp;z=14&amp;iwloc=A&amp;output=embed"
+      >
+      </iframe>
+    </div>
+  </main>
+</div>
